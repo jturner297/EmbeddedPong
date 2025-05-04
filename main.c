@@ -26,9 +26,9 @@
 *  		ramping up the difficulty in the process. When a player wins a round, one LED in their
 *  		points display lights up. The game is over when a player wins three rounds in a row, at
 *  		which point their points display will flash briefly to signify victory.
-*			  The second mode is called MOVE_MODE. In this mode, a single LED is manually shifted
-*		  left or right with button presses. This mode directly connects to PLAY_MODE by allowing
-*		  the player to position the starting LED for the first round.
+*			The second mode is called MOVE_MODE. In this mode, a single LED is manually shifted
+*		left or right with button presses. This mode directly connects to PLAY_MODE by allowing
+*		the player to position the starting LED for the first round.
 *	NOTE:
 *	-Changing modes in achieved by pressing the "SPECIAL" built in button on the NUCLEO board.
 *	-The built-in LED is solid in MOVE_MODE and blinks in PLAY_MODE.
@@ -170,6 +170,13 @@ void EXTI1_IRQHandler(void)
 		  DEBOUNCE_PROTOCOL(&button, msTimer); //Initiate debouncing
 	}
 }
+
+
+
+
+
+
+
 
 //================================================================================================
 // EXTI15_10_IRQHandler()
