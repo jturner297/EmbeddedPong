@@ -34,12 +34,12 @@ void configureSysTickInterrupt(void)
 // @parm: none
 // @return: none
 //
-// 		 Recalculates and sets TIM2's ARR register based on the specified speed. This directly
-//		 affects how often the timer overflows and triggers an interrupt. The timer counter (CNT)
-//		 is also reset to ensure immediate effect.
+// 	Recalculates and sets TIM2's ARR register based on the specified speed. This directly
+//	affects how often the timer overflows and triggers an interrupt. The timer counter (CNT)
+//	is also reset to ensure immediate effect.
 //
 //       Note: The counter reset and ARR value is handled by the updateARR function
-//			   The Timer does not start until the INITIAL_SERVE state.
+//	       The Timer does not start until the INITIAL_SERVE state.
 //================================================================================================
 void configureTIM2 (void)
 {
