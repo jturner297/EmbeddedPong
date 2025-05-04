@@ -96,7 +96,7 @@ void HANDLE_GAME_LED_MOVEMENT (void){
 // @return: none
 //
 //         When a press is detected, this function sets the pressed flag, stores the press timestamp,
-//		   and turns off the player's hitzone LED to simulate a toggle behavior.
+//	   and turns off the player's hitzone LED to simulate a toggle behavior.
 //================================================================================================
 void PRESS_DETECTED(struct Player *p, uint32_t currentTIME_ms){
 	p->pressedFLAG = 1;
@@ -130,8 +130,8 @@ void UPDATE_SCORE (struct Player *p, struct Player *opp){
 // @return: none
 //
 //         Called when a player has lost a round. Temporarily turns off the GAMEBOARD LEDs and the
-//		   built-in board LED for a declared TIME_OUT_TIME. After the time out time has passed, resets the
-//		   player's miss flag, miss LED, and returns game state to INITIAL_SERVE.
+//	   built-in board LED for a declared TIME_OUT_TIME. After the time out time has passed, resets the
+//	   player's miss flag, miss LED, and returns game state to INITIAL_SERVE.
 //================================================================================================
 void TIME_OUT (struct Player *p, uint32_t currentTIME_ms){
 	TURN_OFF_GAMEBOARD_LEDS();
@@ -152,7 +152,7 @@ void TIME_OUT (struct Player *p, uint32_t currentTIME_ms){
 // @return: none
 //
 //         Prepares the system for the winner’s circle state by recording the timestamp of the win,
-//		   turning off LEDs, and reconfiguring TIM2 to display the animation of the points display
+//	   turning off LEDs, and reconfiguring TIM2 to display the animation of the points display
 //================================================================================================
 void SET_UP_WINNERS_CIRCLE(struct Player *p, uint32_t currentTIME_ms){
 	p->winnerTIME_STAMP = currentTIME_ms;//new
@@ -163,21 +163,6 @@ void SET_UP_WINNERS_CIRCLE(struct Player *p, uint32_t currentTIME_ms){
 	startTIM2_MACRO;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //================================================================================================
 // HANDLE_MISS()
 //
@@ -187,7 +172,7 @@ void SET_UP_WINNERS_CIRCLE(struct Player *p, uint32_t currentTIME_ms){
 // @return: none
 //
 //         Called when a player misses. Updates miss timestamp and flag, turns on miss LED, calls
-//		   UPDATE_SCORE(), and changes game state. If the opponent has won, enters the winner's circle.
+//	   UPDATE_SCORE(), and changes game state. If the opponent has won, enters the winner's circle.
 //================================================================================================
 void HANDLE_MISS(struct Player *p, struct Player *opp, uint32_t currentTIME_ms){
 	p->hitzoneLED.port-> ODR &= ~(0x1 <<   p->hitzoneLED.pin); //force player HITZONE LED off
@@ -223,7 +208,7 @@ void HANDLE_MISS(struct Player *p, struct Player *opp, uint32_t currentTIME_ms){
 // @return: none
 //
 //         Waits 2.5 seconds after a player wins. Resets player score, LEDs, and sets game state
-//		   to INITIAL_SERVE to restart the game.
+//	   to INITIAL_SERVE to restart the game.
 //================================================================================================
 void IN_THE_WINNERS_CIRCLE(struct Player *p, struct Player *opp, uint32_t currentTIME_ms){
 	p->hitzoneLED.port-> ODR |= (0x1 <<   p->hitzoneLED.pin); //force green HITZONE LED on
