@@ -14,7 +14,7 @@
 // @parm: none
 // @return: none
 //         Called when the system state is in PLAY_MODE. Handles majority of the game's
-//		   logic and systems
+//	   logic and systems
 //================================================================================================
 void HANDLE_GAME(void){
 	switch(game_state){
