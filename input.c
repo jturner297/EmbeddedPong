@@ -15,8 +15,8 @@
 // configure_external_switches()
 // @parm: none
 // @return: none
-// 		Setups 2 external push button switches at PA4 and PA1 for input. Also configures external
-//		interrupts for pins 4 and 1
+// 	Setups 2 external push button switches at PA4 and PA1 for input. Also configures external
+//	interrupts for pins 4 and 1
 //  	Note: Left Button = PA4, Right Button = PA1
 //================================================================================================
 void configure_external_switches(void){
@@ -41,8 +41,8 @@ void configure_external_switches(void){
 // configure_board_button()
 // @parm: none
 // @return: none
-// 		Setup user button on Nucleo-L476RG board (PC13) for input. Also configures external
-//		interrupts at PC13
+// 	Setup user button on Nucleo-L476RG board (PC13) for input. Also configures external
+//	interrupts at PC13
 //================================================================================================
 void configure_board_button (void){
 	//RCC->AHB2ENR |= (0x1 << 2); //Port C -already enabled in previous function
@@ -58,9 +58,9 @@ void configure_board_button (void){
 //================================================================================================
 // DEBOUNCE_PROTOCOL()
 // @parm: push_button = Pointer to the UserInput struct representing the button
-// 		  currentTIME_ms = Current system time in milliseconds.
+// 	  currentTIME_ms = Current system time in milliseconds.
 // @return: none
-//		 Flags the button press as pending and records the current time to track
+//	 Flags the button press as pending and records the current time to track
 //       how long the button has been held.
 //================================================================================================
 void DEBOUNCE_PROTOCOL(struct UserInput *push_button, uint32_t currentTIME_ms){
@@ -71,7 +71,7 @@ void DEBOUNCE_PROTOCOL(struct UserInput *push_button, uint32_t currentTIME_ms){
 // SPECIAL_BUTTON_ACTIONS()
 // @parm: none
 // @return: none
-//		Used to switch game modes and cleanly reinitialize the game state.
+//	Used to switch game modes and cleanly reinitialize the game state.
 //================================================================================================
 void SPECIAL_BUTTON_ACTIONS(void){
 	LEDcount = (current_saved_position); //saves the LEDcount position from the MOVE_MODE - Will be used in the first round for the PLAY MODE
@@ -94,15 +94,15 @@ void SPECIAL_BUTTON_ACTIONS(void){
 // @parm: none
 // @return: none
 //
-//		 Called when the button is finished deboucning. It determines which button was pressed
-//		 (left, right, or special) and executes the appropriate behavior based on the current
-//		 system state.
-//			- In PLAY_MODE:
+//	Called when the button is finished deboucning. It determines which button was pressed
+//	(left, right, or special) and executes the appropriate behavior based on the current
+//	system state.
+//	- In PLAY_MODE:
 //              Processes hit detection and scoring.
 //              Handles valid hits and missed hits
-//			- In MOVE_MODE:
+//	- In MOVE_MODE:
 //              Allows the user to manually shift the LED for initial position setup.
-//			- Special Button:
+//	- Special Button:
 //              Toggles game modes and handles resets.
 //================================================================================================
 void HANDLE_DEBOUNCED_BUTTON(void){
