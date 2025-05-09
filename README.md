@@ -1,15 +1,12 @@
 # Embedded Pong
-This project simulates a game of pong using thirty external LEDs and two push
-button switches connected to the **NUCLEO-L476RG** development board. 
-
-A fast-paced, real-time reaction game using external LEDs and physical buttons interfaced with NUCLEO-L476RG development board. 
+A fast-paced, real-time reaction game using external LEDs and physical buttons interfaced with **NUCLEO-L476RG development board**. 
 
 
 
 ## Overview
 **Embedded Pong** is a two-player competitive game that simulates a physical game of Pong using **30 external LEDs** and two pushbuttons connected to the **STM32 NUCLEO-L476RG**. The LEDs are arranged linearly to represent a gameboard, with visual feedback for hits, misses, and scoring. Players compete by timing their button presses to return a "moving" LED that travels back and forth across the gameboard.
 
-**Embedded Pong** is a two-player competitive game that simulates a game of pong using **30 external LEDs** and 
+**Embedded Pong** is a two-player competitive game that simulates a game of Pong using **30 external LEDs** and  **2 external pushbuttons** connected to the  **NUCLEO-L476RG development board**. 
 
 The HITZONE, MISS, and GAMEBOARD LEDs are arranged linearly: twenty-two GAMEBOARD LEDs in the center, plus one
 green HITZONE LED and one red MISS LED at each end. Off to the side, each player has a set
@@ -32,9 +29,9 @@ the player to position the starting LED for the first round.
   - **PLAY_MODE** – the core game, LED ball movement + hit detection  
   - **MOVE_MODE** – manual LED control for choosing starting positions
 - 💡 **30 external LEDs**:  
-  - 22 blue GAMEBOARD LEDs  
-  - 2 green HITZONE LEDs  
-  - 2 red MISS LEDs  
+  - 22 blue GAMEBOARD LEDs
+  - 2 green HITZONE LEDs (1 per player)
+  - 2 red MISS LEDs (1 per player)
   - 6 white POINTS LEDs (3 per player)
 - 🎯 **Scoring system** with reset on miss and flashing win animation
 - 🔄 **Mode toggling** using the on-board USER button (PC13)
