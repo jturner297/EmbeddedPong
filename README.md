@@ -2,7 +2,7 @@
 A fast-paced, real-time reaction game using external LEDs and physical buttons interfaced with the **NUCLEO-L476RG development board**. 
 
 ## Overview
-**Embedded Pong** is a two-player competitive game that simulates a game of Pong using **30 external LEDs** and **2 external pushbuttons** connected to the **NUCLEO-L476RG development board**. The LEDs are arranged linearly to represent the gameboard/table, with visual feedback for hits, misses, and scoring. The goal of the player is to time their button presses for when the "moving" LED enters their HITZONE. 
+**Embedded Pong** is a two-player competitive game that simulates a game of Pong using **30 external LEDs** and **2 external pushbuttons** connected to the **NUCLEO-L476RG development board**. The LEDs are arranged linearly to represent the gameboard/table, with visual feedback for hits, misses, and scoring. The goal is to time button presses as the "moving" LED enters the player's HITZONE.
 
 ## Features
 🎮 **Two-player competitive gameplay**
@@ -10,19 +10,19 @@ A fast-paced, real-time reaction game using external LEDs and physical buttons i
   - Real-time hit detection when the ball enters the HITZONE
 
 🔄 **Dual gameplay modes**
-  - **PLAY_MODE** – The core game. LED "ball" movement + hit detection + scoring
+  - **PLAY_MODE** – The core game: LED "ball" movement, hit detection, scoring
   - **MOVE_MODE** – Manual LED control for choosing initial serve position
 
 💡 **Full LED-based visual interface**
   - 22 blue GAMEBOARD LEDs 
   	- simulate ball movement
-  - 2 Green HITZONE LEDs (1 per player)
+  - 2 green HITZONE LEDs (1 per player)
   	-  indicate valid hit regions
-  - 2 Red MISS LEDs (1 per player)
+  - 2 red MISS LEDs (1 per player)
   	- light up when a player misses or presses too early
-  - 6 White POINTS LEDs (3 per player)
+  - 6 white POINTS LEDs (3 per player)
   	- track player score
-   	- animate when player has won
+   	- animate when a player wins
 
 ⚙️ **State machine-driven architecture**
   - Clearly defined game phases: serve, movement, hitzone, miss, win animation
@@ -42,7 +42,7 @@ A fast-paced, real-time reaction game using external LEDs and physical buttons i
 
 🧠 **Scoring and win logic**
   - Score resets on a miss
-  - First player to win 3 consecutive rounds wins game
+  - First player to win 3 consecutive rounds wins the game
   - Flashing POINTS LEDs indicate game win/victory
 
 🔁 **Mode switching**
