@@ -1,5 +1,14 @@
+
+
+
+
 # Embedded Pong
+<img src="assets/embedded pong thumbnail.jpg" alt="Game Thumbnail" width="500"/>
 A fast-paced, real-time reaction game using external LEDs and physical buttons interfaced with the **NUCLEO-L476RG development board**. 
+
+
+
+
 
 ## Demo
 [![Watch the demo](https://img.youtube.com/vi/C4UiAthuFCo/0.jpg)](https://www.youtube.com/watch?v=C4UiAthuFCo)
