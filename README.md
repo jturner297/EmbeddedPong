@@ -1,5 +1,6 @@
 # Embedded Pong
 A fast-paced, real-time reaction game using external LEDs and physical buttons interfaced with the **NUCLEO-L476RG development board**. 
+![IMG_5347](https://github.com/user-attachments/assets/4bee1665-dae7-4b48-a190-262a4499a228)
 
 ## Overview
 **Embedded Pong** is a two-player competitive game that simulates a game of Pong using **30 external LEDs** and **2 external pushbuttons** connected to the **NUCLEO-L476RG development board**. The LEDs are arranged linearly to represent the gameboard/table, with visual feedback for hits, misses, and scoring. The goal is to time button presses as the "moving" LED enters the player's HITZONE.
