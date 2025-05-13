@@ -1,9 +1,6 @@
-
-
-
-
 # Embedded Pong
-<img src="assets/embedded pong thumbnail.jpg" alt="Game Thumbnail" width="500"/>
+<img src="assets/embedded pong thumbnail.jpg" alt="Game Thumbnail" width="500"/> 
+
 A fast-paced, real-time reaction game using external LEDs and physical buttons interfaced with the **NUCLEO-L476RG development board**. 
 
 ## Overview
@@ -11,6 +8,25 @@ A fast-paced, real-time reaction game using external LEDs and physical buttons i
 
 ## Demo
 [![Watch the demo](https://img.youtube.com/vi/C4UiAthuFCo/0.jpg)](https://www.youtube.com/watch?v=C4UiAthuFCo)
+
+
+
+<div>
+  <a href="https://www.youtube.com/watch?v=C4UiAthuFCo">
+    <img src="https://img.youtube.com/vi/C4UiAthuFCo/0.jpg" width="45%" />
+
+  </a>
+  <a href="https://www.youtube.com/watch?v=C4UiAthuFCo">
+    <img src="https://img.youtube.com/vi/C4UiAthuFCo/0.jpg" width="45%" />
+  </a>
+</div>
+
+<div>
+  <sub><strong>Player 1 Win Demo</strong></sub>&nbsp;&nbsp;&nbsp;&nbsp;
+ 
+  <sub><strong>Miss Detection Demo</strong></sub>
+</div>
+
 
 ## Features
 🎮 **Two-player competitive gameplay**
