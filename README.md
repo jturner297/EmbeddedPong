@@ -21,8 +21,8 @@ A fast-paced, real-time reaction game using external LEDs and physical buttons i
     </td>
   </tr>
   <tr>
-    <td><sub><strong>Player 2 loss Demo </strong></sub></td>
-    <td><sub><strong>Extended Demo</strong></sub></td>
+    <td><sub><strong>Gameplay</strong></sub></td>
+    <td><sub><strong>Mode Switching</strong></sub></td>
   </tr>
 </table>
 
