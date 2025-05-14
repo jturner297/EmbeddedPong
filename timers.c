@@ -4,7 +4,7 @@
 * @file timers.c
 * @brief Source file for timer configuration and control functions
 * @author: Justin Turner
-* @co-author: Jesse Garcia
+* @corresponding author: Jesse Garcia
 * ------------------------------------------------------------------------------------------------
 * Defines functions used for timer control and configuration
 **************************************************************************************************
