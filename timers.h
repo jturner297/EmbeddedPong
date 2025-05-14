@@ -3,7 +3,7 @@
 * @file timers.h
 * @brief Header file for program main
 * @author Justin Turner
-* @co-author Jesse Garcia
+* @corresponding author: Jesse Garcia
 * @version Header for timers.c module
 * ------------------------------------------------------------------------------------------------
 * Declares function prototypes for timers.c
