@@ -5,7 +5,7 @@
 * @file game_logic.c
 * @brief  Source file for core game behavior and state transitions
 * @author: Justin Turner
-* @co-author: Jesse Garcia
+* @corresponding author: Jesse Garcia
 * ------------------------------------------------------------------------------------------------
 * Defines functions used for handling game logic and game related events
 **************************************************************************************************/
