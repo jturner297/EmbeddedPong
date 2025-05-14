@@ -10,13 +10,13 @@ A fast-paced, real-time reaction game using external LEDs and physical buttons i
 <table>
   <tr>
     <td>
-  <a href="https://www.youtube.com/watch?v=C4UiAthuFCo">
-    <img src="https://img.youtube.com/vi/C4UiAthuFCo/0.jpg" width="300%" />
+  <a href="https://www.youtube.com/watch?v=BQ9yHDXTO0I">
+    <img src="assets/extended demo thumbnail.jpg" width="300%" />
       </a>
     </td>
     <td>
-    <a href="https://www.youtube.com/watch?v=BQ9yHDXTO0I">
-    <img src="https://img.youtube.com/vi/BQ9yHDXTO0I/0.jpg" width="300%" />
+    <a href="https://www.youtube.com/watch?v=gO6LgwVbm_k">
+    <img src="assets/move_mode demo thumbnail.jpg"" width="300%" />
       </a>
     </td>
   </tr>
