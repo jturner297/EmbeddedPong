@@ -3,7 +3,7 @@
 * @file game_logic.h
 * @brief Header file for program main
 * @author Justin Turner
-* @co-author Jesse Garcia
+* @corresponding author: Jesse Garcia
 * @version Header for game_logic.c module
 * ------------------------------------------------------------------------------------------------
 * Declares function prototypes for game_logic.c
