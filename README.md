@@ -85,3 +85,6 @@ A fast-paced, real-time reaction game using external LEDs and physical buttons i
 - 2 pushbuttons (connected to PA4 and PA1)
 - Breadboard and jumper wires
 - USB cable for power and flashing via ST-Link
+
+## Block Diagram
+<img src="assets/EMBEDDED_PONG- BLOCK DIAGRAM.png" alt="Game Thumbnail" width="1000"/> 
