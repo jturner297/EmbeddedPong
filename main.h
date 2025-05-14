@@ -3,7 +3,7 @@
 * @file main.h
 * @brief Header file for program main
 * @author Justin Turner
-* @co-author Jesse Garcia
+* @corresponding author: Jesse Garcia
 * @version Header for main.c module
 * ------------------------------------------------------------------------------------------------
 * Defines the shared constants, macros, enums, structures, and declarations used in the program
