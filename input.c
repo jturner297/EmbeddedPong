@@ -6,7 +6,7 @@
 * @file input.c
 * @brief Source file for button configuration, debouncing, and input handling logic
 * @author: Justin Turner
-* @co-author: Jesse Garcia
+* @corresponding author: Jesse Garcia
 * ------------------------------------------------------------------------------------------------
 * Defines the functions responsible for input configuration and their associated interrupts. Also
 * implements functions used for handling button presses.
