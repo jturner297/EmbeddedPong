@@ -4,7 +4,7 @@
 * @file leds.c
 * @brief Source file for LED configuration and control functions
 * @author: Justin Turner
-* @co-author: Jesse Garcia
+* @corresponding author: Jesse Garcia
 * ------------------------------------------------------------------------------------------------
 * Defines functions used for LED control and configuration.
 *************************************************************************************************/
