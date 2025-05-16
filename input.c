@@ -132,7 +132,7 @@ void HANDLE_DEBOUNCED_BUTTON(void){
 				//--calculate previous LED------------------------------------------------------------------------
 				//if LEDcount > 2, prevLED = LEDcount - 1, else the LEDcount is 2 the prevLED is 21
 				uint32_t prevLED = (LEDcount > 2)? LEDcount - 1: 21;
-				LEDS[prevLED].port-> ODR &= ~(0x1 << LEDS[prevLED].pin); //turn off the sixteenth LED
+				LEDS[prevLED].port-> ODR &= ~(0x1 << LEDS[prevLED].pin); //turn off the previous LED
 				break;
 			}
 		}
@@ -161,7 +161,7 @@ void HANDLE_DEBOUNCED_BUTTON(void){
 				//--calculate previous LED------------------------------------------------------------------------
 				//if LEDcount < 21, prevLED = LEDcount + 1, else the LEDcount is 21 the prevLED is 2
 				uint32_t prevLED = (LEDcount < 21)? LEDcount + 1: 2;
-				LEDS[prevLED].port-> ODR &= ~(0x1 << LEDS[prevLED].pin); //turn off the sixteenth LED
+				LEDS[prevLED].port-> ODR &= ~(0x1 << LEDS[prevLED].pin); //turn off the previous LED
 				break;
 			}//end switch
 		}
