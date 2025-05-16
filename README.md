@@ -1,5 +1,6 @@
 # Embedded Pong
-<img src="assets/embedded pong thumbnail.jpg" alt="Game Thumbnail" width="500"/> 
+
+<img src="assets/Embedded_PONG_thumbnailGIF.gif" width="500" />
 
 A fast-paced, real-time reaction game using external LEDs and physical buttons interfaced with the **NUCLEO-L476RG development board**. 
 
@@ -68,7 +69,7 @@ A fast-paced, real-time reaction game using external LEDs and physical buttons i
   - First player to win 3 consecutive rounds wins the game
   - Flashing POINTS LEDs indicate game win/victory
 
-🔁 **Mode switching**
+🔁 **Instant Mode switching**
   - Pressing the built-in USER button toggles between MOVE_MODE and PLAY_MODE
 
 🧪 **Low-level embedded C**
